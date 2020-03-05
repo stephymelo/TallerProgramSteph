@@ -18,7 +18,7 @@ public class Bala extends Personaje {
 	
 	public void movimientoBala() {
 		
-		posY+=vel;
+		posY-=vel;
 		
 	}
 

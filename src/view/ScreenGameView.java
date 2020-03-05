@@ -34,17 +34,21 @@ public class ScreenGameView extends PApplet {
 			screenGameControl.movHeroLeft();
 		}
 
+    screenGameControl.dibujarEnemigos(app);
 
-
-
+	screenGameControl.dibujarBala();
 
 
 	}
 
-	public void drawShoot() {
-		screenGameControl.dibujarBala(app);
+	public void drawBala() {
+	
 
 
+	}
+	
+	public void drawShooter() {
+		screenGameControl.drawShoot(app);
 	}
 
 

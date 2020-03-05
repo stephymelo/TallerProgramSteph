@@ -87,20 +87,14 @@ public class Hero extends Personaje{
 
 
 
+	public int getVida() {
+		return vida;
+	}
 
 
 
-
-     
-     
-     
-     
-     
-
-
-
-	public boolean isMoverDerecha() {
-		return moverDerecha;
+	public void setVida(int vida) {
+		this.vida = vida;
 	}
 
 
@@ -109,38 +103,9 @@ public class Hero extends Personaje{
 
 
 
+     
+     
 
-
-
-	public void setMoverDerecha(boolean moverDerecha) {
-		this.moverDerecha = moverDerecha;
-	}
-
-
-
-
-
-
-
-
-
-
-	public boolean isMoverIzquierda() {
-		return moverIzquierda;
-	}
-
-
-
-
-
-
-
-
-
-
-	public void setMoverIzquierda(boolean moverIzquierda) {
-		this.moverIzquierda = moverIzquierda;
-	}
      
      
      

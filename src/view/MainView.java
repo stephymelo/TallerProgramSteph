@@ -35,6 +35,7 @@ public class MainView extends PApplet {
 		screenOView = new ScreenOneView(this);
 		screenGView = new ScreenGameView(this);
 		screenGOView = new ScreenGameoverView(this);
+		
 
 	}
 
@@ -104,8 +105,8 @@ public class MainView extends PApplet {
 
 			break;
 		case ' ':
-			screenGView.drawShoot();
-			break;
+			screenGView.drawShooter();
+			
 		}
 
 
@@ -131,6 +132,7 @@ public class MainView extends PApplet {
 
 
 			break;
+		
 		}
 	}
 }
