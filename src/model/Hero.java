@@ -27,11 +27,7 @@ public class Hero extends Personaje{
 		
 		
 	
-		
-//		this.posX=300;
-//		this.posY=300;
-//		this.tamX=50;
-//		this.tamY=50;
+
 		
 	}
 	
@@ -47,6 +43,15 @@ public class Hero extends Personaje{
 		app.fill(255);
 		app.textSize(20);
 		app.text(vida+" vidas",400,50);
+		
+	}
+	public void perderVida() {
+	     vida-=1;
+	     if(vida<=0) {
+	    	 vida=0;
+	     }
+	     
+	     
 		
 	}
 	

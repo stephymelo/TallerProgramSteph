@@ -22,6 +22,7 @@ public class ScreenGameControl extends PApplet{
 
 	public void dibujarEnemigos (PApplet app) {
 		juego.drawInvasores(app);
+		juego.eliminarInvasor(app);
 
 	}
 
@@ -29,9 +30,17 @@ public class ScreenGameControl extends PApplet{
 	public void dibujarHero () {
 
 		juego.drawHero();
+		
 
 
 	}
+	public void perderVida(PApplet app) {
+		juego.perderVida(app);
+	}
+	public void pantallaUno(PApplet app) {
+		juego.reinicarOla(app);
+	}
+	
 	public void movHero() {
 
 		juego.movHero();

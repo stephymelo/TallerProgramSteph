@@ -55,6 +55,7 @@ public class MainView extends PApplet {
 		case 1:
 
 			screenGView.drawScreen();
+			
 			break;
 
 		case 2:
@@ -69,12 +70,18 @@ public class MainView extends PApplet {
 
 	}
 
-
+  
+	
+	
 
 
 	public void mouseClicked() {
 
-		if (dist(mouseX,mouseY,screenOView.getPosXRect()+100,screenOView.getPosYRect())<100) {
+		if (dist(mouseX,mouseY,screenOView.getPosXRect()+100,screenOView.getPosYRect())<100&&pantalla==0) {
+			pantalla=1;
+		}
+
+		if (dist(mouseX,mouseY,screenGOView.getPosXRect()+100,screenGOView.getPosYRect())<100&&pantalla==2) {
 			pantalla=1;
 		}
 

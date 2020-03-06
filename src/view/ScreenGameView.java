@@ -26,7 +26,9 @@ public class ScreenGameView extends PApplet {
 
 
 	public void drawScreen() {
+		
 		screenGameControl.dibujarHero();
+		
 		if (movRight==true) {
 			screenGameControl.movHero();
 		}
@@ -37,12 +39,16 @@ public class ScreenGameView extends PApplet {
     screenGameControl.dibujarEnemigos(app);
 
 	screenGameControl.dibujarBala();
+	screenGameControl.perderVida(app);
+	screenGameControl.pantallaUno(app);
 
 
 	}
-
-	public void drawBala() {
 	
+
+	public void drawLose(PApplet app) {
+		
+
 
 
 	}
